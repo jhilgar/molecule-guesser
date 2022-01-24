@@ -1,8 +1,56 @@
+
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Molecule Guesser</title>
-  </head>
-  <body>
-    Molecule Guesser
-  </body>
+<title>Molecule Guesser</title>
+<head>
+<meta charset="utf-8">
+
+<script type="text/javascript" src="JSmol.lite.nojq.js"></script>
+
+<script type="text/javascript"> 
+
+var Info;
+
+;(function() {
+
+
+Info = {
+	width: 500,
+	height: 500,
+	debug: false,
+	color: "0xC0C0C0",
+	addSelectionOptions: true,
+	use: "HTML5",
+	readyFunction: null,
+	defaultModel: ":dopamine", // PubChem -- use $ for NCI
+    bondWidth: 4,
+    zoomScaling: 1.5,
+    pinchScaling: 2.0,
+    mouseDragFactor: 0.5,
+    touchDragFactor: 0.15,
+    multipleBondSpacing: 4,
+    spinRateX: 0.2,
+    spinRateY: 0.5,
+    spinFPS: 20,
+    spin:true,
+    debug: false
+}
+
+})();
+
+
+
+</script>
+</head>
+<body>
+<a href="javascript:jmol.spin(true)">spin ON</a> <a href="javascript:jmol.spin(false)">spin OFF</a>
+<br>
+
+<script>
+
+Jmol.getTMApplet("jmol", Info)
+
+</script>
+
+</body>
 </html>
