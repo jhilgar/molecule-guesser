@@ -20,7 +20,7 @@ Info = {
 	height: 500,
 	debug: false,
 	color: "0xC0C0C0",
-	addSelectionOptions: true,
+	addSelectionOptions: false,
 	use: "HTML5",
 	readyFunction: null,
 	defaultModel: ":dopamine", // PubChem -- use $ for NCI
@@ -33,7 +33,7 @@ Info = {
     spinRateX: 0.2,
     spinRateY: 0.5,
     spinFPS: 20,
-    spin:true,
+    spin: false,
     debug: false
 }
 
@@ -44,13 +44,8 @@ Info = {
 </script>
 </head>
 <body>
-<a href="javascript:jmol.spin(true)">spin ON</a> <a href="javascript:jmol.spin(false)">spin OFF</a>
-<br>
-
 <script>
-
 Jmol.getTMApplet("jmol", Info)
-
 </script>
 
 </body>
